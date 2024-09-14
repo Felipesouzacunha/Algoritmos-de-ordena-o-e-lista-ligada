@@ -13,6 +13,7 @@ public class Main {
             System.out.println("2. Remover livro");
             System.out.println("3. Listar livros");
             System.out.println("4. Ordenar por título");
+            System.out.println("5. Ordenar por autor");
             System.out.println("6. Sair");
 
             int opcao = scanner.nextInt();
@@ -49,10 +50,14 @@ public class Main {
                     break;
 
                 case 5:
+                	biblioteca.ordenarPorAutor();
+                	System.out.println("Livros ordenados por autor.");
+
+                case 6:
                     System.out.println("Saindo...");
                     scanner.close();
                     return;
-
+                    
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
                     break;

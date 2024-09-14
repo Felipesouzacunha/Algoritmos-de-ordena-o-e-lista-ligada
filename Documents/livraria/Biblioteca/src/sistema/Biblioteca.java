@@ -26,6 +26,10 @@ public class Biblioteca {
 		ordenador.bubbleSortPorTitulo(estante);
 	}
 	
+	public void ordenarPorAutor() {
+        ordenador.bubbleSortPorAutor(estante);
+    }
+	
 	public void removerLivro(String titulo) {
 	    estante.remover(titulo);
 	}
